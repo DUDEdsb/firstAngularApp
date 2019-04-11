@@ -7,8 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'firstAngularApp';
-  count = 0;
+  count:number = 0;
+  url:string = '';
   counter(){
     this.count++;
+  }
+  updateImg(){
+    this.url='';
   }
 }
