@@ -1,12 +1,11 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <p> The value of count is {{count}}</p>
-  <button (click)='counter()'>Increment</button>
-  <button (click)='updateImg()'>Change Image</button><br><hr>
-  <img [src]='url' [width]='width' [height]='height'>
-</div>
-
-<router-outlet></router-outlet>
+<!-- <div style="background-color:cadetblue"> -->
+        <app-topbar ></app-topbar>
+        <div class="row">
+            <div class="col-sm-6">
+                <app-leftside></app-leftside>
+            </div>
+            <div class="col-sm-6">
+                <app-rightside></app-rightside>
+            </div>
+        </div>
+<!-- </div> -->
