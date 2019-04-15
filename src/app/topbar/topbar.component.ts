@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./topbar.component.css']
 })
 export class TopbarComponent implements OnInit {
- title: String = 'Facebook';
+ title: String = 'fakebook';
   constructor() { }
 
   ngOnInit() {
