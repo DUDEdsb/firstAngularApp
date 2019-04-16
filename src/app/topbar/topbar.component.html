@@ -1,20 +1,20 @@
-<div class="container-fluid" style="background-color:#4c66a4; margin:4px; border: 8px">
-  <div class="row">
-    <div class="col-2"></div>
-    <div class="col-2 text-white"><h2>{{title}}</h2></div>
-    <div class="col-2"></div>
-    <div class="col-5">
-      <div class="row">
-        <div class="col-4">
-          <app-input-box class="d-inline"></app-input-box>
-        </div>
-        <div class="col-4">
-          <app-input-box class="d-inline"></app-input-box>
-        </div>
-        <div class="col-2"><button class="btn btn-info" style="margin:4px 0px">Login</button></div>
-        <div class="col-2"></div>
-      </div>
+<nav class="navbar navbar-expand-lg navbar-light bg-primary fixed-top">
+    <a class="navbar-brand" href="#">{{title}}</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+              <app-input-box class="d-inline" [objInput]=textInput></app-input-box>
+            </li>
+            <li class="nav-item">
+              <app-input-box class="d-inline" [objInput]=passInput></app-input-box>
+            </li>
+            <li class="nav-item">
+              <app-button [btnInput]="loginBtn"></app-button>
+            </li>
+            </ul>
     </div>
-    <div class="col-1"></div>
-  </div>
-</div>
+  </nav>

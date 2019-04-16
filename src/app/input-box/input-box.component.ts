@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-input-box',
@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InputBoxComponent implements OnInit {
 
-  constructor() { }
-
+  @Input() objInput;
+  constructor() { 
+    // console.log(this.pholder);
+   }
+  
   ngOnInit() {
   }
-
+  
 }

@@ -7,14 +7,15 @@
   </h2>
   <div class="row">
     <div class="col-md-6">
-      <app-input-box></app-input-box>
+      <app-input-box [objInput] = "firstName"></app-input-box>
     </div>
     <div class="col-md-6">
-      <app-input-box></app-input-box>
+      <app-input-box [objInput] = "lastName"></app-input-box>
     </div>
   </div>
   <div>
-    <app-input-box class="d-block"></app-input-box>
-    <app-input-box class="d-block"></app-input-box>
+    <app-input-box class="d-block" [objInput] = "mobileNumber"></app-input-box>
+    <app-input-box class="d-block" [objInput] = "passInput"></app-input-box>
+    <app-button [btnInput] = "btnSignUp"></app-button>
   </div>
 </div>

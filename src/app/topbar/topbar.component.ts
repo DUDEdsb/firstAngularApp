@@ -6,7 +6,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./topbar.component.css']
 })
 export class TopbarComponent implements OnInit {
- title: String = 'fakebook';
+ title: string = 'fakebook';
+ name: string = 'name'
+ textInput = {
+   type:"text",
+   pholder:"name"
+ }
+ passInput = {
+  type:"password",
+  pholder:"password"
+}
+loginBtn = {
+  class:"btn btn-info",
+  btnName: "Login"
+}
   constructor() { }
 
   ngOnInit() {

@@ -7,6 +7,8 @@ import { TopbarComponent } from './topbar/topbar.component';
 import { LeftsideComponent } from './leftside/leftside.component';
 import { RightsideComponent } from './rightside/rightside.component';
 import { InputBoxComponent } from './input-box/input-box.component';
+import { DataserviceService } from './dataservice.service';
+import { ButtonComponent } from './button/button.component';
 
 @NgModule({
   declarations: [
@@ -14,13 +16,14 @@ import { InputBoxComponent } from './input-box/input-box.component';
     TopbarComponent,
     LeftsideComponent,
     RightsideComponent,
-    InputBoxComponent
+    InputBoxComponent,
+    ButtonComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [DataserviceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
